@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fresh Kicks - Shoe Cleaning Business</title>
+  <script src="/_sdk/element_sdk.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      box-sizing: border-box;
+    }
+    
+    * {
+      box-sizing: border-box;
+    }
+
+    .gradient-bg {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    }
+
+    .shoe-icon {
+      animation: bounce 2s infinite;
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    .service-card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+    }
+
+    .btn-primary {
+      transition: all 0.3s ease;
+    }
+
+    .btn-primary:hover {
+      transform: scale(1.05);
+    }
+  </style>
+  <style>@view-transition { navigation: auto; }</style>
+  <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+ </head>
+ <body class="min-h-full">
+  <div id="app" class="min-h-full"><!-- Header -->
+   <header class="gradient-bg text-white py-4 px-6 shadow-lg">
+    <div class="max-w-6xl mx-auto flex justify-between items-center">
+     <div class="flex items-center gap-3">
+      <div class="text-4xl shoe-icon">
+       👟
+      </div>
+      <div>
+       <h1 id="business-name" class="text-2xl font-bold">Fresh Kicks</h1>
+       <p id="tagline" class="text-sm opacity-90">Making Your Kicks Look Brand New!</p>
+      </div>
+     </div>
+     <nav class="hidden md:flex gap-6"><a href="#services" class="hover:underline">Services</a> <a href="#about" class="hover:underline">About</a> <a href="#contact" class="hover:underline">Contact</a>
+     </nav>
+    </div>
+   </header><!-- Developer Credit -->
+   <section class="bg-gray-900 text-white py-6 px-6">
+    <div class="max-w-6xl mx-auto text-center">
+     <h2 class="text-3xl font-bold mb-2">DEVELOPED BY PHISCICODE</h2>
+     <p class="text-xl font-semibold">602 903 9070 FOR MORE DETAILS</p>
+    </div>
+   </section><!-- Hero Section -->
+   <section class="gradient-bg text-white py-20 px-6">
+    <div class="max-w-4xl mx-auto text-center">
+     <h2 id="hero-title" class="text-5xl font-bold mb-4">Your Shoes Deserve the Best!</h2>
+     <p id="hero-subtitle" class="text-xl mb-8 opacity-90">Professional shoe cleaning by kids who care</p><button id="cta-button" class="btn-primary bg-white text-purple-700 px-8 py-4 rounded-full text-lg font-bold shadow-lg hover:shadow-xl"> Book a Cleaning </button>
+    </div>
+   </section><!-- Services Section -->
+   <section id="services" class="py-16 px-6 bg-gray-50">
+    <div class="max-w-6xl mx-auto">
+     <h2 id="services-title" class="text-4xl font-bold text-center mb-12 text-gray-800">Our Services</h2>
+     <div class="grid md:grid-cols-3 gap-8"><!-- Basic Clean -->
+      <div class="service-card bg-white rounded-xl p-8 shadow-md">
+       <div class="text-5xl mb-4">
+        🧽
+       </div>
+       <h3 id="basic-clean-title" class="text-2xl font-bold mb-3 text-gray-800">Basic Clean</h3>
+       <p id="basic-clean-desc" class="text-gray-600 mb-4">Quick wash and wipe down</p>
+       <p class="text-3xl font-bold text-purple-600">$5</p>
+      </div><!-- Deep Clean -->
+      <div class="service-card bg-white rounded-xl p-8 shadow-md">
+       <div class="text-5xl mb-4">
+        ✨
+       </div>
+       <h3 id="deep-clean-title" class="text-2xl font-bold mb-3 text-gray-800">Deep Clean</h3>
+       <p id="deep-clean-desc" class="text-gray-600 mb-4">Thorough cleaning inside and out</p>
+       <p class="text-3xl font-bold text-purple-600">$10</p>
+      </div><!-- Premium Restore -->
+      <div class="service-card bg-white rounded-xl p-8 shadow-md">
+       <div class="text-5xl mb-4">
+        🌟
+       </div>
+       <h3 id="premium-title" class="text-2xl font-bold mb-3 text-gray-800">Premium Restore</h3>
+       <p id="premium-desc" class="text-gray-600 mb-4">Like-new restoration with protection</p>
+       <p class="text-3xl font-bold text-purple-600">$15</p>
+      </div>
+     </div>
+    </div>
+   </section><!-- About Section -->
+   <section id="about" class="py-16 px-6 bg-white">
+    <div class="max-w-4xl mx-auto text-center">
+     <h2 id="about-title" class="text-4xl font-bold mb-6 text-gray-800">About Fresh Kicks</h2>
+     <p id="about-text" class="text-lg text-gray-600 leading-relaxed">Started by four 10-year-old entrepreneurs who love sneakers and wanted to earn money doing something fun! We use eco-friendly products and treat every pair of shoes like they're our own. Your kicks will look amazing, and you'll be supporting young business owners in your community!</p>
+     <div class="mt-8 flex justify-center gap-4 text-4xl"><span>🎯</span> <span>💪</span> <span>🚀</span>
+     </div>
+    </div>
+   </section><!-- Contact Section -->
+   <section id="contact" class="py-16 px-6 bg-gray-50">
+    <div class="max-w-2xl mx-auto text-center">
+     <h2 id="contact-title" class="text-4xl font-bold mb-4 text-gray-800">Get in Touch</h2>
+     <p id="contact-subtitle" class="text-lg text-gray-600 mb-8">Ready to make your shoes shine?</p>
+     <div class="bg-white rounded-xl p-8 shadow-md">
+      <form id="contact-form" action="https://formspree.io/f/xvgdpynd" method="POST" class="space-y-4">
+       <div><label for="name" class="block text-left font-semibold mb-2 text-gray-700">Your Name</label> <input type="text" id="name" name="name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500" required>
+       </div>
+       <div><label for="email" class="block text-left font-semibold mb-2 text-gray-700">Email</label> <input type="email" id="email" name="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500" required>
+       </div>
+       <div><label for="message" class="block text-left font-semibold mb-2 text-gray-700">Message</label> <textarea id="message" name="message" rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500" required></textarea>
+       </div><button type="submit" class="btn-primary w-full bg-purple-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-purple-700"> Send Message </button>
+      </form>
+      <div id="form-message" class="mt-4 p-4 rounded-lg hidden"></div>
+     </div>
+    </div>
+   </section><!-- Footer -->
+   <footer class="gradient-bg text-white py-6 px-6 text-center">
+    <p id="footer-text" class="text-sm">Fresh Kicks - Making shoes awesome since 2024 👟✨</p>
+   </footer>
+  </div>
+  <script>
+    const defaultConfig = {
+      background_color: "#667eea",
+      surface_color: "#ffffff",
+      text_color: "#1f2937",
+      primary_action_color: "#7c3aed",
+      secondary_action_color: "#a78bfa",
+      font_family: "system-ui, -apple-system, sans-serif",
+      font_size: 16,
+      business_name: "Fresh Kicks",
+      tagline: "Making Your Kicks Look Brand New!",
+      hero_title: "Your Shoes Deserve the Best!",
+      hero_subtitle: "Professional shoe cleaning by kids who care",
+      cta_button: "Book a Cleaning",
+      services_title: "Our Services",
+      basic_clean_title: "Basic Clean",
+      basic_clean_desc: "Quick wash and wipe down",
+      deep_clean_title: "Deep Clean",
+      deep_clean_desc: "Thorough cleaning inside and out",
+      premium_title: "Premium Restore",
+      premium_desc: "Like-new restoration with protection",
+      about_title: "About Fresh Kicks",
+      about_text: "Started by four 10-year-old entrepreneurs who love sneakers and wanted to earn money doing something fun! We use eco-friendly products and treat every pair of shoes like they're our own. Your kicks will look amazing, and you'll be supporting young business owners in your community!",
+      contact_title: "Get in Touch",
+      contact_subtitle: "Ready to make your shoes shine?",
+      footer_text: "Fresh Kicks - Making shoes awesome since 2025 👟✨"
+    };
+
+    async function onConfigChange(config) {
+      const baseFont = config.font_family || defaultConfig.font_family;
+      const baseFontStack = 'system-ui, -apple-system, sans-serif';
+      const fontSize = config.font_size || defaultConfig.font_size;
+      const bgColor = config.background_color || defaultConfig.background_color;
+      const surfaceColor = config.surface_color || defaultConfig.surface_color;
+      const textColor = config.text_color || defaultConfig.text_color;
+      const primaryColor = config.primary_action_color || defaultConfig.primary_action_color;
+      const secondaryColor = config.secondary_action_color || defaultConfig.secondary_action_color;
+
+      // Apply font
+      document.body.style.fontFamily = `${baseFont}, ${baseFontStack}`;
+
+      // Apply font sizes
+      document.getElementById('business-name').style.fontSize = `${fontSize * 1.5}px`;
+      document.getElementById('tagline').style.fontSize = `${fontSize * 0.875}px`;
+      document.getElementById('hero-title').style.fontSize = `${fontSize * 3}px`;
+      document.getElementById('hero-subtitle').style.fontSize = `${fontSize * 1.25}px`;
+      document.getElementById('services-title').style.fontSize = `${fontSize * 2.5}px`;
+      document.getElementById('about-title').style.fontSize = `${fontSize * 2.5}px`;
+      document.getElementById('contact-title').style.fontSize = `${fontSize * 2.5}px`;
+
+      // Apply colors
+      const gradientBgs = document.querySelectorAll('.gradient-bg');
+      gradientBgs.forEach(el => {
+        el.style.background = bgColor;
+      });
+
+      const serviceCards = document.querySelectorAll('.service-card');
+      serviceCards.forEach(card => {
+        card.style.backgroundColor = surfaceColor;
+      });
+
+      document.getElementById('about-text').style.color = textColor;
+      document.querySelectorAll('.service-card h3').forEach(el => el.style.color = textColor);
+      document.querySelectorAll('.service-card p:not(.text-3xl)').forEach(el => el.style.color = textColor);
+
+      const ctaButton = document.getElementById('cta-button');
+      ctaButton.style.backgroundColor = surfaceColor;
+      ctaButton.style.color = primaryColor;
+
+      const submitButton = document.querySelector('button[type="submit"]');
+      submitButton.style.backgroundColor = primaryColor;
+
+      document.querySelectorAll('.text-purple-600').forEach(el => {
+        el.style.color = primaryColor;
+      });
+
+      // Apply text content
+      document.getElementById('business-name').textContent = config.business_name || defaultConfig.business_name;
+      document.getElementById('tagline').textContent = config.tagline || defaultConfig.tagline;
+      document.getElementById('hero-title').textContent = config.hero_title || defaultConfig.hero_title;
+      document.getElementById('hero-subtitle').textContent = config.hero_subtitle || defaultConfig.hero_subtitle;
+      document.getElementById('cta-button').textContent = config.cta_button || defaultConfig.cta_button;
+      document.getElementById('services-title').textContent = config.services_title || defaultConfig.services_title;
+      document.getElementById('basic-clean-title').textContent = config.basic_clean_title || defaultConfig.basic_clean_title;
+      document.getElementById('basic-clean-desc').textContent = config.basic_clean_desc || defaultConfig.basic_clean_desc;
+      document.getElementById('deep-clean-title').textContent = config.deep_clean_title || defaultConfig.deep_clean_title;
+      document.getElementById('deep-clean-desc').textContent = config.deep_clean_desc || defaultConfig.deep_clean_desc;
+      document.getElementById('premium-title').textContent = config.premium_title || defaultConfig.premium_title;
+      document.getElementById('premium-desc').textContent = config.premium_desc || defaultConfig.premium_desc;
+      document.getElementById('about-title').textContent = config.about_title || defaultConfig.about_title;
+      document.getElementById('about-text').textContent = config.about_text || defaultConfig.about_text;
+      document.getElementById('contact-title').textContent = config.contact_title || defaultConfig.contact_title;
+      document.getElementById('contact-subtitle').textContent = config.contact_subtitle || defaultConfig.contact_subtitle;
+      document.getElementById('footer-text').textContent = config.footer_text || defaultConfig.footer_text;
+    }
+
+    function mapToCapabilities(config) {
+      return {
+        recolorables: [
+          {
+            get: () => config.background_color || defaultConfig.background_color,
+            set: (value) => {
+              config.background_color = value;
+              if (window.elementSdk) window.elementSdk.setConfig({ background_color: value });
+            }
+          },
+          {
+            get: () => config.surface_color || defaultConfig.surface_color,
+            set: (value) => {
+              config.surface_color = value;
+              if (window.elementSdk) window.elementSdk.setConfig({ surface_color: value });
+            }
+          },
+          {
+            get: () => config.text_color || defaultConfig.text_color,
+            set: (value) => {
+              config.text_color = value;
+              if (window.elementSdk) window.elementSdk.setConfig({ text_color: value });
+            }
+          },
+          {
+            get: () => config.primary_action_color || defaultConfig.primary_action_color,
+            set: (value) => {
+              config.primary_action_color = value;
+              if (window.elementSdk) window.elementSdk.setConfig({ primary_action_color: value });
+            }
+          },
+          {
+            get: () => config.secondary_action_color || defaultConfig.secondary_action_color,
+            set: (value) => {
+              config.secondary_action_color = value;
+              if (window.elementSdk) window.elementSdk.setConfig({ secondary_action_color: value });
+            }
+          }
+        ],
+        borderables: [],
+        fontEditable: {
+          get: () => config.font_family || defaultConfig.font_family,
+          set: (value) => {
+            config.font_family = value;
+            if (window.elementSdk) window.elementSdk.setConfig({ font_family: value });
+          }
+        },
+        fontSizeable: {
+          get: () => config.font_size || defaultConfig.font_size,
+          set: (value) => {
+            config.font_size = value;
+            if (window.elementSdk) window.elementSdk.setConfig({ font_size: value });
+          }
+        }
+      };
+    }
+
+    function mapToEditPanelValues(config) {
+      return new Map([
+        ["business_name", config.business_name || defaultConfig.business_name],
+        ["tagline", config.tagline || defaultConfig.tagline],
+        ["hero_title", config.hero_title || defaultConfig.hero_title],
+        ["hero_subtitle", config.hero_subtitle || defaultConfig.hero_subtitle],
+        ["cta_button", config.cta_button || defaultConfig.cta_button],
+        ["services_title", config.services_title || defaultConfig.services_title],
+        ["basic_clean_title", config.basic_clean_title || defaultConfig.basic_clean_title],
+        ["basic_clean_desc", config.basic_clean_desc || defaultConfig.basic_clean_desc],
+        ["deep_clean_title", config.deep_clean_title || defaultConfig.deep_clean_title],
+        ["deep_clean_desc", config.deep_clean_desc || defaultConfig.deep_clean_desc],
+        ["premium_title", config.premium_title || defaultConfig.premium_title],
+        ["premium_desc", config.premium_desc || defaultConfig.premium_desc],
+        ["about_title", config.about_title || defaultConfig.about_title],
+        ["about_text", config.about_text || defaultConfig.about_text],
+        ["contact_title", config.contact_title || defaultConfig.contact_title],
+        ["contact_subtitle", config.contact_subtitle || defaultConfig.contact_subtitle],
+        ["footer_text", config.footer_text || defaultConfig.footer_text]
+      ]);
+    }
+
+    // Initialize SDK
+    if (window.elementSdk) {
+      window.elementSdk.init({
+        defaultConfig,
+        onConfigChange,
+        mapToCapabilities,
+        mapToEditPanelValues
+      });
+    }
+
+    // CTA Button - Book a Cleaning
+    document.getElementById('cta-button').addEventListener('click', function() {
+      const contactSection = document.getElementById('contact');
+      if (contactSection) {
+        contactSection.scrollIntoView({ behavior: 'smooth' });
+      }
+    });
+
+    // Form handling - Formspree will handle the submission
+    document.getElementById('contact-form').addEventListener('submit', function(e) {
+      const messageDiv = document.getElementById('form-message');
+      messageDiv.textContent = 'Sending your message... 👟✨';
+      messageDiv.className = 'mt-4 p-4 rounded-lg bg-blue-100 text-blue-800';
+      messageDiv.classList.remove('hidden');
+    });
+
+    // Smooth scrolling for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+  </script>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'99c27d50957ca6a6',t:'MTc2Mjc0NTYxOC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
